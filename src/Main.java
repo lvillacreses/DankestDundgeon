@@ -160,8 +160,10 @@ public class Main
                     {
                         hero.equip(Shield);
                     }
+			else if(currentItem.instanceof(Item)) {
                     hero.heal(currentItem);
                     System.out.println("You healed yourself for " + currentItem.getHealth() + " hp.");
+			}
                 }
             }
 			//move rooms
